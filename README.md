@@ -23,3 +23,7 @@ or:
 ## The idea behind the example
 
 This example demonstrates how you can use [Create React App](https://github.com/facebookincubator/create-react-app) with [TypeScript](https://github.com/Microsoft/TypeScript).
+
+## Dashboard UI
+
+https://github.com/mui-org/material-ui/tree/master/docs/src/pages/getting-started/templates/dashboard
