@@ -21,6 +21,7 @@ import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import Detail from './Detail';
 import { 
   BrowserRouter as Router, 
   Route, 
@@ -39,14 +40,6 @@ function Copyright() {
       {'.'}
     </Typography>
   );
-}
-
-function Detail() {
-  let { driverSettlementId } = useParams();
-
-  return (
-    <span>Loading... {driverSettlementId}</span>
-  )
 }
 
 const drawerWidth = 240;
