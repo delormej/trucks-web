@@ -7,6 +7,7 @@
     "@material-ui/icons": "^4.9.1",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "material-table": "^1.57.2",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "^5.1.2",
