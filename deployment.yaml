@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trucksweb-deployment
+  namespace: trucks
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trucksweb-app
+  template:
+    metadata:
+      labels:
+        app: trucksweb-app
+    spec:
+      containers:
+      - name: trucksweb-ctr
+        image: wthacr.azurecr.io/trucks-web:v0
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: trucksweb-service
+    namespace: trucks
+    labels:
+      app: trucksweb
+spec:
+    type: LoadBalancer
+    ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+      protocol: TCP
+    selector:
+      app: trucksweb-app
