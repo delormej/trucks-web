@@ -142,6 +142,7 @@ export default function Dashboard() {
   const handleClick = (value) => () => {
     console.log("redirecting to "+value);
     setClickedValue(value);
+    window.location.href="/";
   }
   
   const handleDrawerOpen = () => {
